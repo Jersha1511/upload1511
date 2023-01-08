@@ -29,7 +29,7 @@ function submitNewAsset(){
   //Create a form data object
  submitData = new FormData();
  //Get form variables and append them to the form data object
- submitData.append('Title', $('#Title').val());
+ submitData.append(<b>'Title'<b>, $('#Title').val());
  submitData.append('Publisher', $('#Publisher').val());
  submitData.append('Producer', $('#Producer').val());
  submitData.append('Genre', $('#Genre').val());
@@ -67,7 +67,7 @@ function getImages(){
  items.push( "<hr />");
 // items.push("<img src='"+BLOB_ACCOUNT + val["filePath"] +"' width='400'/> <br />")
 items.push("<video controls width='320' height =320'> <source src='" + BLOB_ACCOUNT + val["filepath"] + "' height='40'/> </video> <br />");
- items.push( <b>"File is " <b>+ val["Title"] + "<br />");
+ items.push( "File is " + val["Title"] + "<br />");
  items.push( "Publisher is " + val["Publisher"] + "<br />"+ "Producer is "+val["Producer"]+"<br />");
  items.push( "Genre is " + val["Genre"] + "<br />"+ "Age Rating is: "+val["AgeRating"]+"<br />");
  items.push( "<hr />");
