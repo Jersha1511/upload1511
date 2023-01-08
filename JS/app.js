@@ -29,7 +29,7 @@ function submitNewAsset(){
   //Create a form data object
  submitData = new FormData();
  //Get form variables and append them to the form data object
- submitData.append(<b>'Title'<b>, $('#Title').val());
+ submitData.append('Title', $('#Title').val());
  submitData.append('Publisher', $('#Publisher').val());
  submitData.append('Producer', $('#Producer').val());
  submitData.append('Genre', $('#Genre').val());
